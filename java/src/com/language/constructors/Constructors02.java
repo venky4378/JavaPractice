@@ -11,17 +11,23 @@ public class Constructors02 {
 	///for no arg constructor variable;
 	int id3;
 	String rollno;
+	int num;
 	
 
 	
-	Constructors02(){
-		System.out.println("No arg parameterized called");
-		id3 = 00000;
-		rollno = "0xxxxxxx0";
-		
-	}
-	
+//	Constructors02(){
+//		System.out.println("No arg parameterized called");
+//		id3 = 00000;
+//		rollno = "0xxxxxxx0";
+//		
+//	}
+//	
 	// Parameterized Constructor
+	//here this is used to invoke the current class data.
+	//	int cid;
+	//	String cname;
+	//	int cage;
+	//	long phone;
 	
 	Constructors02(int cid,String cname,int cage, long phone){
 		System.out.println("Parameterized Constructor called");
@@ -33,6 +39,7 @@ public class Constructors02 {
 	}
 	
 	//By using the parameterized constructors we are initializing the values of instance data at the time of object creation only
+	//while creating the object if i want to send the data to the instance varibales by using parameterized  constructor.
 	
 
 	public static void main(String[] args) {
@@ -46,8 +53,14 @@ public class Constructors02 {
 		c2.show();
 		
 		Constructors02 c3 = new Constructors02();
+		Constructors02 c5 = new Constructors02();
+		System.out.println(c5.num);
+		System.out.println(c5.cid);
+
 		
 		System.out.println("main method ended");
+		
+
 	
 
 		
@@ -57,6 +70,7 @@ public class Constructors02 {
 		System.out.println("Customer name : "+ cname);
 		System.out.println("Customer age : " + cage);
 		System.out.println("Customer Number : "+ phone);
+
 	}
 
 }
