@@ -1,5 +1,10 @@
 package com.language.constructors;
 
+
+//this() ---> this off is used to call the current class constructor 
+//by using this() it will used to avoid the re-instialisation of data 
+//or duplications in other constructors  in the constructors
+
 public class Model2 {
 	int id;
 	String name;
