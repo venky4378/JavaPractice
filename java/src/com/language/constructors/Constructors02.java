@@ -4,9 +4,9 @@ public class Constructors02 {
 	
 	
 	int cid;
-	String cname;
-	int cage;
-	long phone;
+	static String cname;
+	static int cage;
+	static long phone;
 	
 	///for no arg constructor variable;
 	int id3;
@@ -52,8 +52,8 @@ public class Constructors02 {
 
 		c2.show();
 		
-		Constructors02 c3 = new Constructors02();
-		Constructors02 c5 = new Constructors02();
+		Constructors02 c3 = new Constructors02(cage, cname, cage, phone);
+		Constructors02 c5 = new Constructors02(cage, cname, cage, phone);
 		System.out.println(c5.num);
 		System.out.println(c5.cid);
 

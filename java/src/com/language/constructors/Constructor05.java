@@ -23,17 +23,13 @@ public class Constructor05 {
 		
 		Constructor05 c = new Constructor05();
 		c.display();
-		
-
-		
-		
 	}
-
 }
 
 
+
 //Access Modifiers  class   Interface   innerclass    static-instance variables    methods     constructors  blocks
-- Private 			
--default
--protected
-- Public
+//- Private 			
+//-default
+//-protected
+//- Public
