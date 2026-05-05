@@ -2,7 +2,6 @@ package com.oops;
 
 public class InsurancePolicy {
 	
-	int policyId;
 	String policyHolderName;
 	int age;
 	double sumInsured;

@@ -9,12 +9,13 @@ public class PrimeOrOdd {
 		System.out.println("Enter your number : ");
 		int number = sc.nextInt();
 
-		 if(number % 2 == 0){
+		 if(number % 2 == 0)
 			 System.out.println("The given number is Even");
-		 }
-		 else {
+		 	System.out.println("kwjjndeslkksd");
+		 
+		 else 
 			 System.out.println("The given number is Odd");
-		 }
+		 
 	}
 
 }
