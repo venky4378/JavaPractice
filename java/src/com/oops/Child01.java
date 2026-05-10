@@ -28,7 +28,7 @@ public class Child01 extends Parent01 {
 		
 		//Child class reference ---- child class object  = we can call both the methods of child class and also parent class methods.
 		Child01  c1 = new Child01();
-		System.out.println(c1.setName());
+//		System.out.println(c1.setName());
 		System.out.println(c1.setSid());
 		//child class method
 		System.out.println(c1.salary());
@@ -41,7 +41,7 @@ public class Child01 extends Parent01 {
 //		System.out.println(p1.salary());   ---CE-(The method salary() is undefined for the type Parent01)
 		
 		Parent01 s1 = new Child01();
-		System.out.println(s1.setName());
+//		System.out.println(s1.setName());
 		System.out.println(s1.setSid());
 		
 		

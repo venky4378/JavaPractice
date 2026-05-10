@@ -30,7 +30,7 @@ public class BioForm {
 		String name = sc.next();
 		System.out.println("Enter your age : ");
 		int age = sc.nextInt();
-		System.out.println("Enter your City : ");v v 
+		System.out.println("Enter your City : "); 
 		String city = sc.next();
 
 		Bio b1 = new Bio();

@@ -1,10 +1,12 @@
 package com.oops;
 
 public class Laptop extends Device {
-//		 
-//		Laptop(String brand,String power){
-//			super(brand,power);
-//		}
+	
+		 
+		Laptop(String brand,String power){
+			super(brand,power);
+		}
+
 
 	void openLid() {
 		System.out.println("ewwwwwww");
@@ -17,10 +19,10 @@ public class Laptop extends Device {
 
 	public static void main(String[] args) {
 
-		Laptop d1 = new Laptop();
+		Laptop d1 = new Laptop("Lenovo","1400mah");
 
-		d1.brand = "Apple";
-		d1.power = "500mah";
+//		d1.brand = "Apple";
+//		d1.power = "500mah";
 		d1.openLid();
 		int rate = d1.getRate();
 
