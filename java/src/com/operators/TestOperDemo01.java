@@ -6,12 +6,14 @@ public class TestOperDemo01 {
 
 	public static void main(String[] args) {
 
-		if (a > b)
+		if (a > b) {
 			System.out.println("a is grater");
 		System.out.println("b is small");
-		else 
+		}
+		else {
 			System.out.println("3 is small");
 		
 	}
 
+}
 }
