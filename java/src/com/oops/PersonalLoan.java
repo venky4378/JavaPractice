@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 //Child class
 
-public class PersonalLoan extends Loan {
+public class PersonalLoan extends LoanImpl {
 	Scanner sc = new Scanner(System.in);
 
 	void getDocInfo() {
