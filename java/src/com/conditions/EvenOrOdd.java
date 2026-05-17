@@ -2,7 +2,7 @@ package com.conditions;
 
 import java.util.Scanner;
 
-public class PrimeOrOdd {
+public class EvenOrOdd {
 	static Scanner sc = new Scanner(System.in);
 
 	public static void main(String[] args) {
