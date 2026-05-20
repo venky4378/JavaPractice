@@ -7,35 +7,43 @@ import java.util.Scanner;
 //Example: 145 → 1! + 4! + 5! = 145 → Strong.
 
 public class StrongNumber {
-	
-	static boolean isStrongNum(int n){ // 153
+
+	static boolean isStrong(int n) {
 		boolean status = false;
-		int r = 0;
 		int temp = n;
-		int sum = 1;
-		int fact = 1;
-		while(n<0) {
-			r = n % 10;			//3
-			n = n/10;	
-			for(int i = 1;i<n;i++) {
-				fact *= i;
+		int sum = 0;
+		int r = 0;
+
+		while (n > 0) {
+			r = n % 10;
+			
+			int fact = 1;
+			for (int i = 1; i <= r; i++) {
+				fact = fact * i;
 			}
-			System.out.println(fact);
-			sum += fact;		//3
+			sum = sum + fact;
+			n = n / 10;
+
 		}
-		System.out.println(sum);
-		
-		
-		return false;
-		
+		if (sum == temp) {
+			status = true;
+		}
+
+		return status;
 	}
 
 	public static void main(String[] args) {
-
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter n value : ");
+		System.out.println("Enter number");
 		int n = sc.nextInt();
-		boolean flag = isStrongNum(n);
+
+		boolean flag = isStrong(n);
+		if (flag) {
+			System.out.println("Is Strong");
+		} else {
+			System.out.println("Not a Strong");
+		}
+
 	}
 
 }
