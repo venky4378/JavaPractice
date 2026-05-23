@@ -5,7 +5,6 @@ import java.util.Scanner;
 // Count prime numbers in an array
 // Printing prime numbers also
 
-
 public class PrimeNumbers {
 
 	public static void main(String[] args) {
@@ -30,6 +29,7 @@ public class PrimeNumbers {
 		for (int i = 2; i < n; i++) {
 			if (n % i == 0) {
 				status = false;
+				break;
 			}
 		}
 		return status;

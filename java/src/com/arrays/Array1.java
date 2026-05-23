@@ -2,10 +2,6 @@ package com.arrays;
 
 import java.util.Scanner;
 
-//Count Occurrences: Given an array and a target number $X$,
-//count how many times $X$ appears in the array.
-
-
 
 
 public class Array1 {
