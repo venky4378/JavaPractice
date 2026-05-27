@@ -18,7 +18,7 @@ public class Optimizedbubble {
 					arr[j+1] = temp;
 					status = true;
 				}
-			}if(!status) {
+			}if(!status) { 
 				break;
 			}
 		}
