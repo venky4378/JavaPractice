@@ -19,15 +19,13 @@ public class TestEvenOddIndex {
 
 		while (itr.hasNext()) {
 			itr.next();
-
 			if (i % 2 == 0) {
 				arr.set(i, 0);
-				
 			}
 			i++;
-			
-		}System.out.println(arr);
 
+		}
+		System.out.println(arr);
 
 	}
 }
