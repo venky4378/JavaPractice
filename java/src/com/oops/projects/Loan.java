@@ -1,4 +1,4 @@
-package com.oops;
+package com.oops.projects;
 
 public interface Loan {
 	
