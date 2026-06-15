@@ -1,0 +1,19 @@
+# Eclipse
+.classpath
+.project
+.settings/
+
+# VS Code
+.vscode/
+
+# Server files
+Servers/
+
+# Compiled files
+*.class
+*.war
+
+# Build folders
+bin/
+target/
+out/
