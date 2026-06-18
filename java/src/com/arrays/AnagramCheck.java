@@ -1,0 +1,30 @@
+package com.arrays;
+
+import java.util.Arrays;
+
+//Batch70
+//Java - 
+//1.Check Whether Two Strings Are Anagrams
+//Anagram - Two strings are anagrams if they contain the same characters with the same frequency, regardless of their order.
+//input:  listen , silent
+//Output:  Anagram
+
+public class AnagramCheck {
+
+	public static void main(String[] args) {
+
+		String s1 = "listen";
+		String s2 = "silent";
+		int len1 = s1.length();
+		int len2 = s2.length();
+		
+		char[] ch = s1.toCharArray();
+		char[] ch2 = s2.toCharArray();
+		
+		Arrays.sort(ch);
+		Arrays.sort(ch2);
+		
+		System.out.println();
+	}
+
+}
