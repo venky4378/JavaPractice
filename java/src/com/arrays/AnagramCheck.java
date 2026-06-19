@@ -24,7 +24,15 @@ public class AnagramCheck {
 		Arrays.sort(ch);
 		Arrays.sort(ch2);
 		
-		System.out.println();
+
+		if((new String(ch)).equals(new String(ch2)) && (ch.length == ch2.length)){
+			System.out.println("Anagram");
+		}else {
+			System.out.println("Not an Anagram");
+		}
+		
+		System.out.println(ch);
+		System.out.println(ch2);
 	}
 
 }
