@@ -23,9 +23,13 @@ public class AnagramCheck {
 		
 		Arrays.sort(ch);
 		Arrays.sort(ch2);
+		String ch3 = new String(ch);
+		String ch4 = new String(ch2);
+//		System.out.println(ch3);
+//		System.out.println(ch4);
 		
 
-		if((new String(ch)).equals(new String(ch2)) && (ch.length == ch2.length)){
+		if(ch.equals(ch2) && (ch.length == ch2.length)){
 			System.out.println("Anagram");
 		}else {
 			System.out.println("Not an Anagram");
