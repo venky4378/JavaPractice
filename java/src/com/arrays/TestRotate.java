@@ -25,7 +25,7 @@ public class TestRotate {
 			start++;
 			end--;
 		}
-		System.out.println(Arrays.toArray(arr));	
+		System.out.println(Arrays.toString(arr));	
 	}
 	
 	public static void isRotate(int start,int end) {

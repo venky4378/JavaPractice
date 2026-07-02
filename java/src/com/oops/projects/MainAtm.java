@@ -9,7 +9,7 @@ public class MainAtm {
 		User[] u1 = new User[4];
 		u1[0] = new User(12345, 123456.00, "sdfghj", 8765);
 		u1[1] = new User(23456, 890000.00, "kjnsca", 9876);
-		u1[3] = new User(34567, 890000.00, "ksdnvjs", 8765);
+		u1[2] = new User(34567, 890000.00, "ksdnvjs", 8765);
 
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter the acc no");
@@ -31,9 +31,10 @@ public class MainAtm {
 		}
 		System.out.println("Welcome to the  Atm");
 
-		System.out.println("1.Check the Balance\n2.Deposit\n3.withdraw the cash\n4.pin change\n5.Exit -Back to home");
 
 		while (status) {
+			System.out.println("1.Check the Balance\n2.Deposit\n3.withdraw the cash\n4.pin change\n5.Exit -Back to home");
+
 			System.out.println("Choose the option number : ");
 			int n = sc.nextInt();
 			Atmimpl a = new Atmimpl(u);

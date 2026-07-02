@@ -1,5 +1,5 @@
 package com.collection;
-public  class Singleton {
+class Singleton {
 
 	    private static Singleton instance;
 
@@ -15,9 +15,6 @@ public  class Singleton {
 
 	        return instance;
 	    }
-	}
-
-public class Singleton1{
 
 	    public static void main(String[] args) {
 
