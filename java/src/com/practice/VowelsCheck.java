@@ -8,13 +8,13 @@ public class VowelsCheck {
 		  Scanner sc = new Scanner(System.in);
 	        String ch = sc.next().toLowerCase().charAt(0);
 	        char[] c = ch.toCharArray();
-
-	        if(ch == 'a' || 'e' || 'i' || 'o' || 'u'){
-	            System.out.println(ch1 + "is a vowel");
+for(char c1:c) {
+	        if(c1 == 'a' || 'e' || 'i' || 'o' || 'u'){
+	            System.out.println(ch + "is a vowel");
 	        }else{
-	            System.out.println(ch1 + "is not a vowel");
+	            System.out.println(ch + "is not a vowel");
 	        }
-
+}
 	}
 
 }
