@@ -24,7 +24,7 @@ public class Practice {
 //			i++;
 ////			System.out.println(i);
 //		}
-		show(null);
+//		show(null);
 		
 	}
 //	static void show(Integer o){

@@ -36,7 +36,7 @@ public class TestMethods {
 //		show();
 //		t1.display();
 		
-		int discount = t1.discount();
+		int discount = t1.discount(5,10);
 		int product_price = 500;
 		System.out.println(product_price - discount);
 		

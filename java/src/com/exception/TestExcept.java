@@ -11,20 +11,16 @@ import java.io.IOException;
 public class TestExcept {
 
 	public static void main(String[] args) throws IOException, FileNotFoundException, InterruptedException {
-
 		File file = new File("C:\\Users\\venky\\OneDrive\\Desktop\\acer\\Swamy\\text.txt");
 		boolean status = file.createNewFile();
 		FileReader fr = new FileReader(file);
-
 		int n = fr.read();
 		while (n != -1) {
 			System.out.print((char) n);
 			n = fr.read();
 			Thread.sleep(100);
-
-
 		}fr.close();
-
+		
 //		if (status) {
 //			System.out.println("File created");
 //		} else {
