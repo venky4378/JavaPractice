@@ -6,14 +6,11 @@ public class MobileCompare {
 	String mobile;
 	String brand;
 	int price;
-	
-	
-	
+
 	@Override
 	public String toString() {
 		return "MobileCompare [mobile=" + mobile + ", brand=" + brand + ", price=" + price + "]";
 	}
-	
 	
 	public MobileCompare(String mobile, String brand, int price) {
 		super();
@@ -39,6 +36,5 @@ public class MobileCompare {
 	public void setPrice(int price) {
 		this.price = price;
 	}
-	
-	
+		
 }

@@ -27,7 +27,7 @@ class Resource {
 		notify();
 	}
 
-} 
+}
 
 class Producer implements Runnable {
 	Resource r;
