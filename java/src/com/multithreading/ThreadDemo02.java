@@ -1,26 +1,25 @@
 
 package com.multithreading;
 
-class Resource {
+class Resource01 {
 
 	int i = 0;
 	boolean status = false;
 
 	synchronized void put(int i) throws InterruptedException {
-		
-		if(status) {
+
+		if (status) {
 			wait();
 		}
 		this.i = i;
 		System.out.println("Put : " + i);
 		status = true;
 		notify();
-		
 
 	}
 
-	synchronized void get() throws InterruptedException{
-		if(!status) {
+	synchronized void get() throws InterruptedException {
+		if (!status) {
 			wait();
 		}
 		System.out.println("Get : " + i);
@@ -30,11 +29,11 @@ class Resource {
 
 }
 
-class Producer implements Runnable {
+class Producer01 implements Runnable {
 
-	Resource r;
+	Resource01 r;
 
-	Producer(Resource r) { 
+	Producer01(Resource01 r) { 
 		this.r = r;
 		Thread t = new Thread(this, "Producer");
 		t.start();
@@ -56,11 +55,11 @@ class Producer implements Runnable {
 	}
 }
 
-class Consumer implements Runnable {
+class Consumer01 implements Runnable {
 
-	Resource r;
+	Resource01 r;
 
-	Consumer(Resource r) {
+	Consumer01(Resource01 r) {
 		this.r = r;
 		Thread t = new Thread(this, "Consumer");
 		t.start();
@@ -90,9 +89,9 @@ public class ThreadDemo02 {
 
 	public static void main(String[] args) {
 
-		Resource r = new Resource();
-		Producer p = new Producer(r);
-		Consumer c = new Consumer(r);
+		Resource01 r = new Resource01();
+		Producer01 p = new Producer01(r);
+		Consumer01 c = new Consumer01(r);
 	}
 
 }

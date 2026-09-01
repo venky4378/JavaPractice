@@ -55,8 +55,6 @@ class BankDemo {
 		}
 
 		System.out.println("Final Balance : " + account.getBalance());
-		
-
 	}
 
 }

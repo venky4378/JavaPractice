@@ -8,7 +8,7 @@ public class TestDemo02 {
 	static void isReverse(int[] arr, int start, int end) {
 
 		makeRotate(arr, start, end);
-		makeRotate(arr, r, end);
+		makeRotate(arr, start, end);
 
 	}
 
